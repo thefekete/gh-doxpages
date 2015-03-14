@@ -29,7 +29,6 @@ if git branch -a | grep -q 'remotes.*gh-pages'; then
 fi
 git checkout --orphan gh-pages
 git rm -rf --ignore-unmatch !(html)
-rm -rf !(html)
 mv html/* ./
 rmdir html
 git add .
